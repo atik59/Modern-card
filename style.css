@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #D9ECF2;
+}
+
+
+.card-area{
+    margin: 10% 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.cardlayout{
+    padding: 15px;
+    width: 20%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 16px 20px rgb(88, 88, 88);
+}
+
+img{
+    width: 100%;
+    background-color: white;
+    border-radius: 16px;
+    opacity: 40%;
+}
+
+h1{
+    font-size: 120%;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px 0;
+}
+
+p{
+    font-size: 95%;
+    text-align: justify;
+    padding-bottom: 10px;
+    color: white;
+
+}
+
+.one{
+    background-color: #FF414D;
+    border-bottom: 5px solid #1AA6B7; 
+}
+
+.one:hover{
+        cursor: pointer;
+        background-color: #1AA6B7;
+        transition: 0.5s;
+        box-shadow: none;
+}
+
+.two{
+    background-color: #1AA6B7;
+    border-bottom: 5px solid #002D40; 
+}
+
+.two:hover{
+    cursor: pointer;
+    background-color: #002D40;
+    transition: 0.5s;
+    box-shadow: none;
+}
+
+.three{
+    background-color: #002D40;
+    border-bottom: 5px solid #FF414D; 
+}
+
+.three:hover{
+    cursor: pointer;
+    background-color: #FF414D;
+    transition: 0.5s;
+    box-shadow: none;
+ 
+}
+
+@media only screen and (min-width: 200px) and (max-width: 767px){
+    .card-area{
+        flex-direction: column;
+        margin-left: 15%;
+    }
+
+    .cardlayout{
+        width: 50%;
+        margin-top: 20%;
+    }
+
+    h1{
+        font-size: 80%;
+    }
+    
+    p{
+        font-size: 70%;
+    }
+}
